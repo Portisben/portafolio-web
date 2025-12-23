@@ -18,17 +18,26 @@ const respuesta = document.getElementById("respuesta");
 formulario.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const nombre = document.getElementById("nombre").value.trim();
+    const nombre = document.getElementById("nombre").value.trim().toLowerCase();
 
     if (nombre === "") {
         respuesta.textContent = "Por favor escribe tu nombre";
         respuesta.style.color = "red";
-    } else {
+    } 
+    else if (nombre === "steve") {
+        respuesta.textContent = "Hola Steve, este mensaje es solo para ti, no te rindas, vamos bien y esto será un cambio para mejor.💚";
+        respuesta.style.color = "#0057b7";
+    } 
+    else if (nombre === "marlene") {
+        respuesta.textContent = "Gracias por visitar mi página, recuerda que te amo 💜";
+        respuesta.style.color = "purple";
+    } 
+    else {
         respuesta.textContent = "Formulario enviado correctamente 👍";
         respuesta.style.color = "green";
-        formulario.reset();
     }
 });
+
 let cuenta = 0;
 
 const contador = document.getElementById("contador");
