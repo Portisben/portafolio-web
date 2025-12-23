@@ -83,3 +83,36 @@ label {
     width: 500px;
     
 }
+.oscuro {
+    background-color: #222;
+    color: white;
+}
+.oscuro header,
+.oscuro main,
+.oscuro section,
+.oscuro footer {
+    background-color: #1e1e1e;
+    color: white;
+}
+.oscuro h1,
+.oscuro h2,
+.oscuro h3,
+.oscuro p,
+.oscuro label {
+    color: white;
+}
+.oscuro input,
+.oscuro textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.oscuro button {
+    background-color: #444;
+    color: white;
+}
+body, header, main, section, footer {
+    transition: background-color 0.3s, color 0.3s;
+}
+
